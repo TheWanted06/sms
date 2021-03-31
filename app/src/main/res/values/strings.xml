@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SmsOne</string>
+    <string name="complete_the_fields_to_send_sms">complete_the_fields_to_send_sms</string>
+    <string name="enter_number">Enter number</string>
+    <string name="sms_text_here">sms text here</string>
+    <string name="sms_manager">SMS MANAGER</string>
+    <string name="sms_intent">SMS INTENT</string>
+    <string name="send_sms">SEND SMS</string>
+</resources>

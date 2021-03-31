@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/headingText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/complete_the_fields_to_send_sms"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/enter_number"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName|phone"
+        />
+
+    <EditText
+        android:id="@+id/smsBody"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:ems="10"
+        android:hint="@string/sms_text_here"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/smsManager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sendSmsByManager"
+        android:text="@string/sms_manager" />
+
+    <Button
+        android:id="@+id/smsIntent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sendSmsIntent"
+        android:text="@string/sms_intent" />
+
+    <Button
+        android:id="@+id/sendSms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sendSmsThree"
+        android:text="@string/send_sms" />
+
+
+</LinearLayout>
